@@ -21,7 +21,7 @@ jobs:
     - name: Set Execution Permissions for WDIO
       run: chmod +x node_modules/.bin/wdio
     - name: Run tests
-      run: npx wdio run wdio.conf.js
+      run: npx wdio run wdio.chrome.conf.js
     - name: Publish Report to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
