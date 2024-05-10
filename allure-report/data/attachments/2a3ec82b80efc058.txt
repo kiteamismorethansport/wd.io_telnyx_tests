@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": ".modal__toggle-open.icon.icon-search"
+}

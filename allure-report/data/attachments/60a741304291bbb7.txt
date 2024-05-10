@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".Button__StyledDefaultButton-sc-44gl5i-0.gBCTym.LoginForm__LoginButton-fhXOmx.eazkBi\"}\n  (Session info: chrome-headless-shell=124.0.6367.119)",
+  "stacktrace": "\tGetHandleVerifier [0x00007FF6A12915C2+60802]\n\t(No symbol) [0x00007FF6A120ACC2]\n\t(No symbol) [0x00007FF6A10C7CE4]\n\t(No symbol) [0x00007FF6A1116D4D]\n\t(No symbol) [0x00007FF6A1116E1C]\n\t(No symbol) [0x00007FF6A115CE37]\n\t(No symbol) [0x00007FF6A113ABBF]\n\t(No symbol) [0x00007FF6A115A224]\n\t(No symbol) [0x00007FF6A113A923]\n\t(No symbol) [0x00007FF6A1108FEC]\n\t(No symbol) [0x00007FF6A1109C21]\n\tGetHandleVerifier [0x00007FF6A159425D+3217949]\n\tGetHandleVerifier [0x00007FF6A15D61F7+3488183]\n\tGetHandleVerifier [0x00007FF6A15CF17F+3459391]\n\tGetHandleVerifier [0x00007FF6A134B986+823622]\n\t(No symbol) [0x00007FF6A121605F]\n\t(No symbol) [0x00007FF6A1210F84]\n\t(No symbol) [0x00007FF6A1211112]\n\t(No symbol) [0x00007FF6A1201964]\n\tBaseThreadInitThunk [0x00007FFAEDB37344+20]\n\tRtlUserThreadStart [0x00007FFAEEC226B1+33]\n"
+}
