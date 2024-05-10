@@ -15,7 +15,7 @@ jobs:
     - name: Install Dependencies
       run: npm install
     - name: Run Tests
-      run: npm run wdio
+      run: npx wdio run wdio.conf.js
     - name: Publish Report to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
