@@ -11,6 +11,7 @@
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js",
+    "wdio:file": "wdio wdio.conf.js --spec",
     "wdio:chrome": "wdio wdio.chrome.conf.js",
     "wdio:firefox": "wdio wdio.firefox.conf.js",
     "wdio:edge": "wdio wdio.edge.conf.js",
