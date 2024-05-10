@@ -12,9 +12,11 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '20'
-    - name: Install Dependencies
+    - name: Install dependencies
       run: npm install
-    - name: Run Tests
+    - name: Set Execution Permissions for WDIO
+      run: chmod +x node_modules/.bin/wdio
+    - name: Run tests
       run: npx wdio run wdio.conf.js
     - name: Publish Report to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
