@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "#quick-add-template--14828910772302__featured-collection-06960027533390"
+}
