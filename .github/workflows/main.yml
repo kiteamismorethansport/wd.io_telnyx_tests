@@ -58,6 +58,6 @@ jobs:
     - name: Clean up Post-build
       if: always()  # Ensure this step runs even if the build fails
       run: |
-        git checkout main
+        git checkout master
         git branch -D gh-pages  # Delete the local gh-pages branch
 
