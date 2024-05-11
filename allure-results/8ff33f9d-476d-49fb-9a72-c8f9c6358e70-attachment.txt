@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "div[class=\"LoginForm__FieldContainer-kXONbt eSxLXo\"] div[class=\"TextField__ErrorMessage-sc-r5o2cn-5 iFEVFt\"]"
-}

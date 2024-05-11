@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "button[class=\"c-kDQqQr c-kDQqQr-fwzCzT-background-light c-kDQqQr-cOvXws-cv c-ddSKil\"]"
-}

@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": ".template-search__results.collection.page-width"
-}

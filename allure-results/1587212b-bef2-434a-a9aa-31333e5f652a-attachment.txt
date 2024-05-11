@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "div[class=\"TextField__InputWrapper-sc-r5o2cn-4 flBpW\"]>input[name=\"email\"]"
-}

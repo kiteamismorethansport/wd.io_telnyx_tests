@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "#Slider-template--14828910772302__featured-collection-0"
-}

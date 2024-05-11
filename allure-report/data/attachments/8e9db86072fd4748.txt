@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": ".disclosure__button.localization-form__select.localization-selector.link.link--text.caption-large"
-}

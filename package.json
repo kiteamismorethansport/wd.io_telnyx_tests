@@ -15,6 +15,7 @@
     "wdio:chrome": "wdio wdio.chrome.conf.js",
     "wdio:firefox": "wdio wdio.firefox.conf.js",
     "wdio:edge": "wdio wdio.edge.conf.js",
-    "wdio:all-browsers": "npm run wdio:chrome && npm run wdio:firefox && npm run wdio:edge"
+    "wdio:all-browsers": "npm run wdio:chrome && npm run wdio:firefox && npm run wdio:edge",
+    "clean-reports": "rd /s /q allure-report allure-results"
   }
 }

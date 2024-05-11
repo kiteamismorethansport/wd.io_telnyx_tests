@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "li:nth-of-type(64) > .caption-large.disclosure__link.link.link--text"
-}
