@@ -35,9 +35,6 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable
 
-    - name: Build Project  # Optional, depends on your project setup
-      run: npm run build
-
     - name: Configure Git
       run: |
         git config --local user.email "action@github.com"
