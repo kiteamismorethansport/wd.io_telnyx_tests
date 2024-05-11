@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".button.button--tertiary.cart-remove-button\"}\n  (Session info: chrome-headless-shell=124.0.6367.60)",
+  "stacktrace": "#0 0x555c7e8a2e33 <unknown>\n#1 0x555c7e592567 <unknown>\n#2 0x555c7e5dd27d <unknown>\n#3 0x555c7e5dd331 <unknown>\n#4 0x555c7e620624 <unknown>\n#5 0x555c7e5ff38d <unknown>\n#6 0x555c7e61dae2 <unknown>\n#7 0x555c7e5ff103 <unknown>\n#8 0x555c7e5d01ba <unknown>\n#9 0x555c7e5d0b8e <unknown>\n#10 0x555c7e86759b <unknown>\n#11 0x555c7e86b34b <unknown>\n#12 0x555c7e853681 <unknown>\n#13 0x555c7e86beb2 <unknown>\n#14 0x555c7e8386af <unknown>\n#15 0x555c7e892428 <unknown>\n#16 0x555c7e892600 <unknown>\n#17 0x555c7e8a1f84 <unknown>\n#18 0x7fd990094ac3 <unknown>\n"
+}

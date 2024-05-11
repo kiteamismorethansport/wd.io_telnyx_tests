@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".cart-item__name h4 break\"}\n  (Session info: chrome-headless-shell=124.0.6367.119)",
+  "stacktrace": "\tGetHandleVerifier [0x00007FF7315115C2+60802]\n\t(No symbol) [0x00007FF73148ACC2]\n\t(No symbol) [0x00007FF731347CE4]\n\t(No symbol) [0x00007FF731396D4D]\n\t(No symbol) [0x00007FF731396E1C]\n\t(No symbol) [0x00007FF7313DCE37]\n\t(No symbol) [0x00007FF7313BABBF]\n\t(No symbol) [0x00007FF7313DA224]\n\t(No symbol) [0x00007FF7313BA923]\n\t(No symbol) [0x00007FF731388FEC]\n\t(No symbol) [0x00007FF731389C21]\n\tGetHandleVerifier [0x00007FF73181425D+3217949]\n\tGetHandleVerifier [0x00007FF7318561F7+3488183]\n\tGetHandleVerifier [0x00007FF73184F17F+3459391]\n\tGetHandleVerifier [0x00007FF7315CB986+823622]\n\t(No symbol) [0x00007FF73149605F]\n\t(No symbol) [0x00007FF731490F84]\n\t(No symbol) [0x00007FF731491112]\n\t(No symbol) [0x00007FF731481964]\n\tBaseThreadInitThunk [0x00007FFAEDB37344+20]\n\tRtlUserThreadStart [0x00007FFAEEC226B1+33]\n"
+}
