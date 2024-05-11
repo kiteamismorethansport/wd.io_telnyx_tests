@@ -21,4 +21,4 @@ const config = {
   }]
 };
 
-export { config };
+export { config }; //anything new?
