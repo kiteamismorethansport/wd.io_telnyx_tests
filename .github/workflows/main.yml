@@ -49,7 +49,7 @@ jobs:
         cp -r ../allure-report/* .  # Make sure this path is correct; Copy new Allure report files
         git add .
         git commit -m "Deploy Allure report to gh-pages"  # Commit the new report
-        git push --force origin gh-pages  # Force push the update
+        git push origin gh-pages  # Force push the update
 
     
     - name: Clean up Post-build
