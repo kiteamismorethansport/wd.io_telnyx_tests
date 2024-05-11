@@ -3,10 +3,10 @@ name: CI Build and Deploy
 on:
   push:
     branches:
-      - main  # Trigger on pushes to the main branch
+      - master  # Trigger on pushes to the main branch
   pull_request:
     branches:
-      - main  # Trigger on pull requests to the main branch
+      - master  # Trigger on pull requests to the main branch
 
 jobs:
   build-and-deploy:
@@ -25,7 +25,7 @@ jobs:
       run: npm install  # Install npm dependencies
 
     - name: Run WebdriverIO Tests
-      run: npx wdio run wdio.conf.js  # Run tests
+      run: npx wdio run wdio.chrome.conf.js  # Run tests
 
     - name: Install Google Chrome  # This step is optional, depends on your testing setup
       run: |
