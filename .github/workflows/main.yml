@@ -1,26 +1,63 @@
-name: Run WebdriverIO Tests
+name: CI Build and Deploy
 
-on: [push]
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger on pull requests to the main branch
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build-and-deploy:
+    runs-on: ubuntu-latest  # Specify the type of runner
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js
+    - name: Checkout Repository
+      uses: actions/checkout@v2  # Checks-out your repository under $GITHUB_WORKSPACE
+
+    - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '20'
-    - name: Install dependencies
-      run: npm install
-    - name: Set Execution Permissions for WDIO
-      run: chmod +x node_modules/.bin/wdio
-    - name: Run tests
-      run: npx wdio run wdio.chrome.conf.js
-    - name: Publish Report to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.WD_SECRET_PAGE }}
-        publish_dir: ./allure-report
-        
+        node-version: '16'  # Set the Node.js version
+
+    - name: Install Dependencies
+      run: npm install  # Install npm dependencies
+
+    - name: Run WebdriverIO Tests
+      run: npx wdio run wdio.conf.js  # Run tests
+
+    - name: Install Google Chrome  # This step is optional, depends on your testing setup
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
+
+    - name: Build Project  # Optional, depends on your project setup
+      run: npm run build
+
+    - name: Configure Git
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+
+    - name: Deploy to GitHub Pages
+      run: |
+        # Optional steps to generate your site/assets, if needed
+        # npm run export  # For example, using Next.js or similar
+        git checkout --orphan gh-pages  # Create a new branch for GitHub Pages
+        git reset --hard
+        git commit --allow-empty -m "Initializing gh-pages branch"
+        git push origin gh-pages
+        git checkout main
+        git add your_output_folder_or_file  # Add the files you want to deploy
+        git commit -m "Deploy to gh-pages"
+        git push https://${{ secrets.MY_PAT }}@github.com/kiteamismorethansport/wd.io_telnyx_tests.git gh-pages
+      env:
+        MY_PAT: ${{ secrets.MY_PAT }}  # Use a secret stored in GitHub repository settings
+
+    - name: Clean up Post-build
+      if: always()  # Ensure this step runs even if the build fails
+      run: |
+        git checkout main
+        git branch -D gh-pages  # Delete the local gh-pages branch
+
