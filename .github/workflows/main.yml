@@ -24,8 +24,10 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests and generate Allure results
-      run: npm run wdio:chrome  # Your test script should configure Allure to output results
+   - name: Set Execution Permissions for WDIO
+      run: chmod +x node_modules/.bin/wdio
+    - name: Run tests
+      run: npx wdio run wdio.chrome.conf.js # Your test script should configure Allure to output results
 
     - name: Install Allure Command Line
       run: sudo apt-get install allure -y
