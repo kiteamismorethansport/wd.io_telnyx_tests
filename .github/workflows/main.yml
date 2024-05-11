@@ -39,22 +39,18 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-
     - name: Deploy to GitHub Pages
       run: |
-        # Optional steps to generate your site/assets, if needed
-        # npm run export  # For example, using Next.js or similar
-        git checkout --orphan gh-pages  # Create a new branch for GitHub Pages
-        git reset --hard
-        git commit --allow-empty -m "Initializing gh-pages branch"
-        git push origin gh-pages
-        git checkout master
-        git add allure-report  # Add the files you want to deploy
-        git commit -m "Deploy to gh-pages"
-        git push https://${{ secrets.WD_SECRET_PAGE }}@github.com/kiteamismorethansport/wd.io_telnyx_tests.git gh-pages
-      env:
-        MY_PAT: ${{ secrets.WD_SECRET_PAGE }}  # Use a secret stored in GitHub repository settings
-
+    git checkout --orphan gh-pages
+    git reset --hard
+    git commit --allow-empty -m "Initializing gh-pages branch"
+    git push --force origin gh-pages  # Force push to overwrite remote branch
+    git rm -rf .  # Remove all files for a clean state
+    cp -r allure-report/* .  # Copy new Allure report files
+    git add .
+    git commit -m "Deploy Allure report to gh-pages"  # Commit the new report
+    git push --force origin gh-pages  # Force push the update
+    
     - name: Clean up Post-build
       if: always()  
       run: |
