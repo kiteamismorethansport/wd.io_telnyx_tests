@@ -24,6 +24,9 @@ jobs:
     - name: Install Dependencies
       run: npm install  # Install npm dependencies
 
+    - name: Set Execution Permissions for WDIO
+      run: chmod +x node_modules/.bin/wdio
+
     - name: Run WebdriverIO Tests
       run: npx wdio run wdio.chrome.conf.js  # Run tests
 
