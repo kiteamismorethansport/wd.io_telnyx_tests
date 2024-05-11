@@ -7,8 +7,8 @@ const config = {
     'spec',
     ['allure', {
        outputDir: 'allure-results',
-       disableWebdriverStepsReporting: true,
-       disableWebdriverScreenshotsReporting: true,
+       disableWebdriverStepsReporting: false,
+       disableWebdriverScreenshotsReporting: false,
     }],
  ],
   capabilities: [{
