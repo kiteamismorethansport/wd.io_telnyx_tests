@@ -30,7 +30,7 @@ jobs:
       run: npx wdio run wdio.chrome.conf.js # Your test script should configure Allure to output results
 
     - name: Install Allure Command Line
-      run: sudo apt-get install allure -y
+      run: npm install -g allure-commandline
 
     - name: Generate Allure Report
       run: allure generate allure-results --clean -o allure-report
