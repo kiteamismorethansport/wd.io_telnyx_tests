@@ -51,7 +51,7 @@ jobs:
         git reset --hard
         git commit --allow-empty -m "Initializing gh-pages branch"
         git push origin gh-pages
-        git checkout main
+        git checkout master
         git add your_output_folder_or_file  # Add the files you want to deploy
         git commit -m "Deploy to gh-pages"
         git push https://${{ secrets.WD_SECRET_PAGE }}@github.com/kiteamismorethansport/wd.io_telnyx_tests.git gh-pages
