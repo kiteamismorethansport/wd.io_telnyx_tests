@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "#subscription_opt_in"
-}

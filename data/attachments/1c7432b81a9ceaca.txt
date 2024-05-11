@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".Button__StyledDefaultButton-sc-44gl5i-0.gBCTym.LoginForm__LoginButton-fhXOmx.eazkBi\"}\n  (Session info: chrome-headless-shell=124.0.6367.60)",
-  "stacktrace": "#0 0x56211a200e33 <unknown>\n#1 0x562119ef0567 <unknown>\n#2 0x562119f3b27d <unknown>\n#3 0x562119f3b331 <unknown>\n#4 0x562119f7e624 <unknown>\n#5 0x562119f5d38d <unknown>\n#6 0x562119f7bae2 <unknown>\n#7 0x562119f5d103 <unknown>\n#8 0x562119f2e1ba <unknown>\n#9 0x562119f2eb8e <unknown>\n#10 0x56211a1c559b <unknown>\n#11 0x56211a1c934b <unknown>\n#12 0x56211a1b1681 <unknown>\n#13 0x56211a1c9eb2 <unknown>\n#14 0x56211a1966af <unknown>\n#15 0x56211a1f0428 <unknown>\n#16 0x56211a1f0600 <unknown>\n#17 0x56211a1fff84 <unknown>\n#18 0x7efebbe94ac3 <unknown>\n"
-}
