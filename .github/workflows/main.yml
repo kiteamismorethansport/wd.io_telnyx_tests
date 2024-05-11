@@ -24,7 +24,7 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-   - name: Set Execution Permissions for WDIO
+    - name: Set Execution Permissions for WDIO
       run: chmod +x node_modules/.bin/wdio
     - name: Run tests
       run: npx wdio run wdio.chrome.conf.js # Your test script should configure Allure to output results
