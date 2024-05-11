@@ -36,6 +36,22 @@ bash
 npm run wdio
 This command will execute tests using the default WebdriverIO settings.
 
+bash
+npm run wdio:chrome
+This command will execute tests using Chrome browser
+
+bash
+npm run wdio:edge
+This command will execute tests using Edge browser
+
+bash
+npm run wdio:firefox
+This command will execute tests using Firefox browser
+
+bash
+npm run wdio:file
+This command will execute tests of a single file with specific name
+
 Generating Allure Reports
 After running the tests, generate the Allure report with:
 
@@ -44,11 +60,11 @@ npm run report
 This script triggers the Allure CLI to convert the test results into a human-readable report. You can view these reports by opening allure-report/index.html in any web browser.
 
 Deployment
-Include notes about deploying this on a live system, if applicable. Often, this will involve integrating with a CI/CD pipeline, where tests are run automatically:
-
+Include integrating with a CI/CD pipeline, where tests are run automatically:
 Configure the pipeline to build the project.
 Run tests and generate reports using the commands provided above.
 Optionally push results to a monitoring or report aggregation service.
+
 Built With
 Node.js - The JavaScript runtime
 WebdriverIO - Selenium-based testing framework
