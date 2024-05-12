@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".cart-item__name h4 break\"}\n  (Session info: chrome-headless-shell=124.0.6367.60)",
+  "stacktrace": "#0 0x55d9be5d8e33 <unknown>\n#1 0x55d9be2c8567 <unknown>\n#2 0x55d9be31327d <unknown>\n#3 0x55d9be313331 <unknown>\n#4 0x55d9be356624 <unknown>\n#5 0x55d9be33538d <unknown>\n#6 0x55d9be353ae2 <unknown>\n#7 0x55d9be335103 <unknown>\n#8 0x55d9be3061ba <unknown>\n#9 0x55d9be306b8e <unknown>\n#10 0x55d9be59d59b <unknown>\n#11 0x55d9be5a134b <unknown>\n#12 0x55d9be589681 <unknown>\n#13 0x55d9be5a1eb2 <unknown>\n#14 0x55d9be56e6af <unknown>\n#15 0x55d9be5c8428 <unknown>\n#16 0x55d9be5c8600 <unknown>\n#17 0x55d9be5d7f84 <unknown>\n#18 0x7f8e8d294ac3 <unknown>\n"
+}
