@@ -16,7 +16,11 @@ const config = {
     browserName: 'chrome',
     acceptInsecureCerts: true,
     'goog:chromeOptions': {
-       args: ['--headless', '--disable-gpu'],
+       args: ['--headless',
+       '--disable-gpu',
+       '--window-size=1280,800',
+       '--no-sandbox',
+       '--disable-dev-shm-usage',],
     },
   }]
 };

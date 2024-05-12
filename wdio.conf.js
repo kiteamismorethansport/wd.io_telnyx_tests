@@ -52,7 +52,15 @@ export const config = {
    
     capabilities: [{
         // capabilities for local browser web tests
-        browserName: 'chrome',
+        browserName: 'chrome', 
+        acceptInsecureCerts: true,
+    'goog:chromeOptions': {
+       args: ['--headless',
+       '--disable-gpu',
+       '--window-size=1280,800',
+       '--no-sandbox',
+       '--disable-dev-shm-usage',],
+    },
     }],
 
     //
