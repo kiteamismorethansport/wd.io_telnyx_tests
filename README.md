@@ -4,7 +4,7 @@ This repository contains automated tests for a web telnyx.com using WebdriverIO 
 
 ## Getting Started
 
-Follow these instructions to set up the project locally. These steps will get you a copy of the project up and running on your local machine for development and testing purposes and also running the flow on a pipeline in github actions.
+Follow these instructions to set up the project locally and within the pipeline on Github Actions. These steps will get you a copy of the project up and running on your local machine for development and testing purposes and also running the flow on a pipeline on github actions with allure test report availabe on Github Pages.
 
 ### Prerequisites
 
@@ -68,7 +68,7 @@ npm run report
 ```
 This script triggers the Allure CLI to convert the test results into a human-readable report. You can view these reports by opening allure-report/index.html in any web browser.
 
-### To run all tests on a pipeline in Github Actions and to see allure report in Github Pages, you just need to create new repository on a Github , and to push this project to your repository.  
+### To run tests within a pipeline on Github Actions and to see allure report on Github Pages, you just need to create new repository on your Github account , and to push this project to your repository.  
 
 Built With
 Node.js - The JavaScript runtime
